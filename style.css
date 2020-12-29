@@ -1,0 +1,146 @@
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: #BE3144;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+#navbar a {
+  padding-right: 30px;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+}
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #292A2D;
+}
+#welcome-section h1 {
+  font-size: 60px;
+  font-weight: 84px;
+  color: white;
+  margin: 5px;
+}
+#welcome-section p {
+  font-size: 30px;
+  font-weight: 42px;
+  font-style: italic;
+  color: #be3144;
+}
+@media only screen and (max-width: 440px) {
+  #welcome-section h1{
+    font-size: 42px;
+  }
+  #welcome-section p {
+    font-size: 22px;
+  }
+}
+#projects {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #45567D;
+  display: grid;
+  grid-template-areas: 
+    "tribute landing technical"
+}
+@media only screen and (max-width: 700px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#tribute_page {
+  grid-area: tribute;
+}
+#survey_form {
+  grid-area: landing;
+}
+#technical_documentation {
+  grid-area: technical;
+}
+#project-text {
+}
+.text-under {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+#contact {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #292A2D;
+  display: flex;
+}
+#contact h1 {
+  font-size: 60px;
+  font-weight: 84px;
+  color: white;
+  margin: 5px;
+}
+#contact p {
+  font-size: 18px;
+  font-weight: 42px;
+  font-style: italic;
+  color: #f0f0f0;
+}
+footer {
+  text-align: center;
+}
+
+/* Trial Start */
+#social-media {
+  display: flex;
+  flex-direction: row;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #545151;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* Trial End */
